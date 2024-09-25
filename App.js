@@ -185,7 +185,7 @@ export default function App() {
 
     try {
       const geoResponse = await axios.get(
-        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=AIzaSyDp0U_NV_mbbUFbzyso_c854jBjq0B2U10`
+        `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=GOOGLE_API_KEY`
       );
       const placeName =
         geoResponse.data.results[0]?.formatted_address || "Unknown Place";
